@@ -19,16 +19,54 @@
             
                 <fieldset class="grupo_formulario">
                     <legend>Número do cartão</legend>
-                    <label for="cc-1">Número do cartão</label>
+                        <label for="cc-1">Número do cartão</label>
                     <section class="cc-inputs">
-
+                            <input type="tel" maxlength="4" aria-label="1part_cartao" id="cc-1" required pattern="[0-9]{4}">
+                            <input type="tel" maxlength="4" aria-label="2part_cartao" required pattern="[0-9]{4}">
+                            <input type="tel" maxlength="4" aria-label="3part_cartao" required pattern="[0-9]{4}">
+                            <input type="tel" maxlength="4" aria-label="4part_cartao" required pattern="[0-9]{4}">
                     </section>
                 </fieldset>
+
+            <section class="linha_inputs">
+                <section class="">
+                    <label for="cc-2">Nome</label>
+                        <input type="text" aria-label="nome_no_cartao">
+                </section>
+                <fieldset class="grupo_formulario">
+                    <legend>Validade</legend>
+                    <label for="data_validade"></label>
+                        <section class="inputs_data">
+                            <select id="Mes_validade" aria-label="Mes_validade" required>
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select id="ano_validade" aria-label="ano_validade" required>
+                                <option value="1">2022</option>
+                                <option value="2">2023</option>
+                            </select>
+                        </section>
+
+                </fieldset>
+            </section>
 
         </section>
 
         <section class="tras">
-
+            <section class="grupo_formulario-cvc">
+                <label for="cvc_codigo">CVC</label>
+                <input type="tel" maxlength="3" required>
+            </section>
         </section>
     </form>
 

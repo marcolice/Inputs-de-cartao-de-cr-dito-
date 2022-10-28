@@ -1,0 +1,1 @@
+Primeiro projeto prático de estudo de HTML, CSS e JavaScript
